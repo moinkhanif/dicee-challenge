@@ -58,6 +58,9 @@ footer a {
   color: #fff;
   text-decoration: none;
 }
+#try {
+  width: 100px;
+}
 
 @media (max-width: 770px){
   .container{
