@@ -65,5 +65,7 @@ footer {
   }
   h1 {
     font-size: 5rem;
+    margin: auto auto 10px;
+
   }
 }
