@@ -36,7 +36,7 @@ document.querySelector(".input-toggle").onclick = function() {
 // Name change value 
 
 document.querySelector(".name-change").onclick = function(){
-    
+    event.preventDefault();
     play1 = document.querySelector(".player1 input").value;
     play2 = document.querySelector(".player2 input").value;
     document.querySelector(".player1-name").innerHTML= play1;
