@@ -11,14 +11,35 @@
 
     <div class="container">
       <h1>Dicee Game</h1>
+      <div>
+          <button class="input-toggle btn">Change Player Names</button>
+      </div>
+      
+      <div class="userinput hidden">
+        <div class="player1">
+          <span class="name-label">Player1 Name:</span>
+          <input type="text" placeholder="Player1 Name" value="Player1">
+        </div>
+        <div class="player2">
+          <span class="name-label">Player1 Name:</span>
+          <input type="text" placeholder="Player2 Name" value="Player2">
+        </div>
+        <button class="name-change btn">Submit</button>
+      </div>
       <div class="dice">
-        <p>Player 1</p>
+        <p class="player1-name">Player1</p>
         <img class="img1" src="./images/dice1.png">
       </div>
 
       <div class="dice">
-        <p>Player 2</p>
+        <p class="player2-name">Player2</p>
         <img class="img2" src="./images/dice2.png">
+      </div>
+      <div>
+        <p class="player-score"></p>
+      </div>
+      <div>
+        <button class="btn" id = "try">Try Agin!</button>
       </div>
 
     </div>

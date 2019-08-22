@@ -22,7 +22,7 @@ h1 {
   color: #4ECCA3;
 }
 
-p {
+p , .name-label /*added name-label (personal mod) */ {
   font-size: 2rem;
   color: #4ECCA3;
   font-family: 'Indie Flower', cursive;
@@ -38,4 +38,15 @@ footer {
   text-align: center;
   font-family: 'Indie Flower', cursive;
 
+}
+
+/* Personal Modifications */
+.hidden {
+  display: none;
+}
+.btn {
+  padding: 10px;
+  background-image: linear-gradient( rgb(39, 104, 82),#4ECCA3);
+  color: #fff;
+  border-radius: 10px;
 }
