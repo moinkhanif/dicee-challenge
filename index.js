@@ -9,14 +9,15 @@ function randomize() {
     document.querySelector(".img1").src = `./images/dice${randomNumber1}.png`;
     let randomNumber2 = Math.round(Math.random()*5)+1;
     document.querySelector(".img2").src = `./images/dice${randomNumber2}.png`;
+    var title = document.querySelector(".container > h1");
     if(randomNumber1 > randomNumber2){
-        document.querySelector(".container > h1").innerHTML = `${play1} Wins!`;
+        title.innerHTML = `${play1} Wins!`;
         play1Points++;
     }else if(randomNumber1 < randomNumber2){
-        document.querySelector(".container > h1").innerHTML = `${play2} Wins!`;
+        title.innerHTML = `${play2} Wins!`;
         play2Points++;
     }else {
-        document.querySelector(".container > h1").innerHTML = "Its a Draw!";
+        title.innerHTML = "Its a Draw!";
     }
 }
 document.querySelector("#try").onclick = function(){
