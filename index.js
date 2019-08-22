@@ -40,9 +40,16 @@ document.querySelector(".name-change").onclick = function(){
     event.preventDefault();
     play1 = document.querySelector(".player1 input").value;
     play2 = document.querySelector(".player2 input").value;
+    if(play1 == ""){
+        play1 = "Player1";
+    }
+    if (play2 == ""){
+        play2 = "Player2";
+    }
     document.querySelector(".player1-name").innerHTML= play1;
     document.querySelector(".player2-name").innerHTML= play2;
     document.querySelector(".userinput").classList.add("hidden");
+    
 }
 
 
